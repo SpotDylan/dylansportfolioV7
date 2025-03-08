@@ -32,7 +32,7 @@ export function getContent(): ContentData {
     title: "Applied Math and Computer Science @ MIT. Incoming @ Amazon.",
     about: [
       "I'm a student and researcher at MIT focused on quantitative biology, foundational model research, and chemical engineering research.",
-      "Currently working at the Myerson Research Group where I lead the development of control and bayesian optimization systems for the production of mRNA Lipid Nanoparticles.",
+      "Currently working at the Myerson Research Group where I lead the development of control and Bayesian optimization systems for the production of mRNA Lipid Nanoparticles.",
       "Previously did neuroinformatics work with spiking neural networks to create computational models for the Drosophila Melanogaster at the Bidaye Lab at MPFI",
       "When I'm not doing research, building or programming, you can find me playing poker, going to the gym, and practicing my photography skills."
     ],
@@ -59,7 +59,7 @@ export function getContent(): ContentData {
         title: "DELTA: Diffusion Extrapolative Text Model",
         year: "2025",
         categories: "LLaDA, Llama, Speculative Decoding, Diffusion LLMs",
-        description: "Specualtive decoding with diffusion text LLMs as draft models. Top 10 in the Mercor x Cognition x Etched Hackathon; 2000+ downloads via Hugging Face",
+        description: "Speculative decoding with diffusion text LLMs as draft models. Top 10 in the Mercor x Cognition x Etched Hackathon; 2000+ downloads via Hugging Face",
         github: "https://github.com/natask/infra_gpu_hack",
         liveSite: ""
       },
@@ -99,7 +99,7 @@ export function getContent(): ContentData {
         title: "Retriever.AI",
         year: "2023",
         categories: "Python, C#, ElevenLabs",
-        description: "An AI-native platform that assists visually impaired users operate the Windows OS. Built for the ElevenLabs Hackathon.",
+        description: "An AI-native platform that assists visually impaired users in operating the Windows OS. Built for the ElevenLabs Hackathon.",
         github: "https://github.com/hydrol0x/retriever",
         liveSite: "https://retriever.fyi/"
       },
