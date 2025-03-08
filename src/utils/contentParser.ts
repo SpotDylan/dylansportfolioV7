@@ -107,7 +107,7 @@ export function getContent(): ContentData {
     footerLinks: [
       {
         label: "Resume",
-        url: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app",
+        url: "https://drive.google.com/file/d/1vHLpvKQtmdJJILg0Y2WwOhdnUZg8kTmq/view?usp=sharing",
         icon: "/file.svg"
       },
       {
