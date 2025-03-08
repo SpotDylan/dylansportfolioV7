@@ -111,9 +111,7 @@ const PhotoPanel = ({
           src={photo.imagePath}
           alt={photo.title}
           fill
-          className={`object-cover transition-transform duration-1000 ease-out ${
-            isSelected ? "scale-110" : "scale-100"
-          }`}
+          className="object-cover"
         />
         
         {/* Overlay for better readability */}
