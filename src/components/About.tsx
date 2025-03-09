@@ -14,8 +14,8 @@ const AnimatedLink = ({ href, children }: { href: string; children: React.ReactN
       rel="noopener noreferrer"
       className="relative inline-block group"
     >
-      <span className="text-[#4031cc] font-medium">{children}</span>
-      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4031cc] transition-all duration-300 group-hover:w-full"></span>
+      <span className="text-[#4031cc] dark:text-[#4031cc] font-medium">{children}</span>
+      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4031cc] dark:bg-[#4031cc] transition-all duration-300 group-hover:w-full"></span>
     </Link>
   );
 };

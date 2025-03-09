@@ -43,19 +43,31 @@ export default function Home() {
             <div className="flex gap-6">
               <button 
                 onClick={() => setActiveSection('about')} 
-                className={`${activeSection === 'about' ? 'text-gray-900 dark:text-white' : 'text-gray-600 dark:text-gray-400'} hover:text-gray-900 dark:hover:text-white`}
+                className={`${
+                  activeSection === 'about' 
+                    ? 'nav-item-active' 
+                    : 'nav-item-inactive'
+                } transition-colors duration-200`}
               >
                 About
               </button>
               <button 
                 onClick={() => setActiveSection('connect')} 
-                className={`${activeSection === 'connect' ? 'text-gray-900 dark:text-white' : 'text-gray-600 dark:text-gray-400'} hover:text-gray-900 dark:hover:text-white`}
+                className={`${
+                  activeSection === 'connect' 
+                    ? 'nav-item-active' 
+                    : 'nav-item-inactive'
+                } transition-colors duration-200`}
               >
                 Connect
               </button>
               <button 
                 onClick={() => setActiveSection('projects')} 
-                className={`${activeSection === 'projects' ? 'text-gray-900 dark:text-white' : 'text-gray-600 dark:text-gray-400'} hover:text-gray-900 dark:hover:text-white`}
+                className={`${
+                  activeSection === 'projects' 
+                    ? 'nav-item-active' 
+                    : 'nav-item-inactive'
+                } transition-colors duration-200`}
               >
                 Projects
               </button>

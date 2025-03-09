@@ -1,8 +1,29 @@
 @import "tailwindcss";
 
-:root {
+:root[data-theme="light"] {
   --background: #ffffff;
   --foreground: #171717;
+  --gray-600: #1a1a1a;  /* Much darker gray for light mode */
+  --gray-400: #333333;  /* Much darker mid-gray for light mode */
+  --gray-200: #4d4d4d;  /* Much darker light-gray for light mode */
+  
+  /* Navbar specific colors for light mode */
+  --nav-active-text: #000000;
+  --nav-active-border: #000000;
+  --nav-inactive-text: #4d4d4d;
+}
+
+:root[data-theme="dark"] {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --gray-600: #9e9e9e;  /* Original gray-600 for dark mode */
+  --gray-400: #bdbdbd;  /* Original gray-400 for dark mode */
+  --gray-200: #e0e0e0;  /* Original gray-200 for dark mode */
+  
+  /* Navbar specific colors for dark mode */
+  --nav-active-text: #ffffff;
+  --nav-active-border: #ffffff;
+  --nav-inactive-text: #9e9e9e;
 }
 
 @theme inline {
@@ -12,15 +33,51 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Override Tailwind text colors with custom CSS variables for better theme switching */
+.text-gray-600 {
+  color: var(--gray-600);
+}
+
+.text-gray-400 {
+  color: var(--gray-400);
+}
+
+.text-gray-200 {
+  color: var(--gray-200);
+}
+
+/* Additional text color classes that may appear in components */
+:root[data-theme="light"] .text-gray-800 {
+  color: #000000;
+}
+
+:root[data-theme="dark"] .text-gray-800 {
+  color: #d4d4d4;
+}
+
+/* Navbar specific classes */
+.nav-item-active {
+  color: var(--nav-active-text);
+  border-bottom: 2px solid var(--nav-active-border);
+  padding-bottom: 0.25rem;
+}
+
+.nav-item-inactive {
+  color: var(--nav-inactive-text);
+  padding-bottom: 0.25rem;
+}
+
+/* Apply hover states correctly for both themes */
+.hover\:text-gray-900:hover {
+  color: #171717;
+}
+
+.dark .dark\:hover\:text-white:hover {
+  color: #ffffff;
 }
